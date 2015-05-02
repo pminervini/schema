@@ -20,7 +20,19 @@ WordNet:
 
 Validation and test results will be stored in directories logs/fb15k_schema/ and logs/music_schema/.
 
-# Comparing the Learning Algorithms:
+# Triple Classification experiments:
+
+Freebase (FB13):
+
+    $ ./scripts/fb13_classification/fb13_classification.py | parallel -j 8
+
+WordNet (WN11):
+
+    $ ./scripts/wn11_classification/wn11_classification.py | parallel -j 8
+
+Validation and test results will be stored in directories logs/fb13_classification/ and logs/wn11_classification/.
+
+# Comparing the Optimization Criteria (loss functionals):
 
 Freebase (FB15k):
 

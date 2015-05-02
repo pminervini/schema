@@ -10,7 +10,7 @@ xiscaltrans_vers = ['XiScalTransE', 'XiNScalTransE']
 
 simple_method_set = base_vers + scaltrans_vers + xi_vers + semixi_vers + xiscaltrans_vers
 
-sim_set = ['cosine']
+sim_set = ['L1', 'L2', 'dot']
 
 margin_set = [1, 2, 10]
 ndim_set = [20, 50, 100]
@@ -36,7 +36,7 @@ c, method = 0, 'ADAGRAD'
 cmd_adagrad = ('./learn_parameters.py --seed=%d --strategy=%s --totepochs=%d --test_all=%d --lr=%f --name=wn_margin/wn_%s_%d '
                 ' --train=%s --valid=%s --test=%s --nbatches=%d --no_rescaling --filtered '
                 ' --op=%s --sim=%s --ndim=%d --nhid=%d --margin=%d ' # varying params
-                ' > logs/wn_models_margin/wn_margin.%s.%s.%d.%d.%d.%d.log 2>&1')
+                ' > logs/wn/wn.%s.%s.%d.%d.%d.%d.log 2>&1')
 
 
 for op in simple_method_set:
