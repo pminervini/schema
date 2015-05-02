@@ -1,4 +1,4 @@
-# schema
+# Link Prediction with Schema-Aware Energy-Based Models for Knowledge Graphs
 
 Prerequisites:
 
@@ -8,7 +8,7 @@ Prerequisites:
 
 The following commands use GNU Parallel for executing multiple experiments (default: 8) at the same time.
 
-# Evaluating the Schema-Aware Energy Functions:
+## Evaluating the Schema-Aware Energy Functions:
 
 Freebase (FB15k):
 
@@ -20,7 +20,7 @@ WordNet:
 
 Validation and test results will be stored in directories logs/fb15k_schema/ and logs/music_schema/.
 
-# Triple Classification experiments:
+## Triple Classification experiments:
 
 Freebase (FB13):
 
@@ -32,7 +32,7 @@ WordNet (WN11):
 
 Validation and test results will be stored in directories logs/fb13_classification/ and logs/wn11_classification/.
 
-# Link Prediction experiments:
+## Link Prediction experiments:
 
 Freebase (FB15k):
 
@@ -44,7 +44,7 @@ WordNet (WN18):
 
 Validation and test results will be stored in directories logs/fb15k_lp/ and logs/wn18_lp/.
 
-# Comparing the Optimization Criteria (loss functionals):
+## Comparing the Optimization Criteria (loss functionals):
 
 Freebase (FB15k):
 
