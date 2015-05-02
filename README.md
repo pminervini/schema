@@ -53,3 +53,10 @@ Freebase (FB15k):
 WordNet:
 
     $ ./scripts/wn_optimization/wn_optimal.py | parallel -j 8
+
+Visualizing the minimization of the loss functional using different adaptive learning rate selection criteria:
+
+    $ BEST_K=1 ./show_losses.py models/wn18_optimal/*.pkl -show
+    $ BEST_K=1 LOSS_THR=10000 ./show_losses.py models/fb15k_optimal/*.pkl -show
+
+![Visualization](http://slides.neuralnoise.com/schema/schema.png)
