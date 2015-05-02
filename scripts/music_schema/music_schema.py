@@ -12,7 +12,9 @@ simple_method_set = base_vers + xi_vers + scaltrans_vers + semixi_vers + xiscalt
 
 sim_set = ['L1', 'L2', 'dot']
 
-margin_set = [5] #[1, 2, 10]
+#margin_set = [1, 2, 10]
+margin_set = [1]
+
 ndim_set = [20, 50, 100, 200]
 nhid_set = [20, 50, 100, 200]
 
@@ -21,20 +23,20 @@ nbatches = 10
 lr = 0.1
 seed = 123
 
-train_path = 'data/fb15k_type/FB15k-train.pkl'
-valid_path = 'data/fb15k_type/FB15k-valid.pkl'
-test_path = 'data/fb15k_type/FB15k-test.pkl'
+train_path = 'data/music_type/music-train.pkl'
+valid_path = 'data/music_type/music-valid.pkl'
+test_path = 'data/music_type/music-test.pkl'
 
 # ADAGRAD
 # def adagrad(param, rate, epsilon, gradient, updates, param_squared_gradients):
 c, method = 0, 'ADAGRAD'
 
 # def adagrad(param, rate, epsilon, gradient, updates, param_squared_gradients):
-cmd_adagrad = ('./learn_parameters.py --seed=%d --strategy=%s --totepochs=%d --test_all=%d --lr=%f --name=fb15k_dr_sl/fb15k_%s_%d '
+cmd_adagrad = ('./learn_parameters.py --seed=%d --strategy=%s --totepochs=%d --test_all=%d --lr=%f --name=music_dr_sl/music_%s_%d '
                 ' --train=%s --valid=%s --test=%s --nbatches=%d --no_rescaling --filtered '
-                ' --domain_range=data/fb15k_type/fb15k_domains_ranges.pkl --dr_standard_learning '
+                ' --domain_range=data/music_type/music_domains_ranges.pkl --dr_standard_learning '
                 ' --op=%s --sim=%s --ndim=%d --nhid=%d --margin=%d' # varying params
-                ' > logs/fb15k_models_dr_sl/fb15k_dr_sl.%s_%s_%d_%d_%d_%d.log 2>&1')
+                ' > logs/music_schema/music_schema.%s_%s_%d_%d_%d_%d.log 2>&1')
 
 
 for op in simple_method_set:
