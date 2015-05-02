@@ -36,7 +36,7 @@ c, method = 0, 'ADAGRAD'
 cmd_adagrad = ('./learn_parameters.py --seed=%d --strategy=%s --totepochs=%d --test_all=%d --lr=%f --name=wn_margin/wn_%s_%d '
                 ' --train=%s --valid=%s --test=%s --nbatches=%d --no_rescaling --filtered '
                 ' --op=%s --sim=%s --ndim=%d --nhid=%d --margin=%d ' # varying params
-                ' > logs/wn/wn.%s.%s.%d.%d.%d.%d.log 2>&1')
+                ' > logs/wn18_lp/wn18.%s.%s.%d.%d.%d.%d.log 2>&1')
 
 
 for op in simple_method_set:

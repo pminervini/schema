@@ -32,6 +32,18 @@ WordNet (WN11):
 
 Validation and test results will be stored in directories logs/fb13_classification/ and logs/wn11_classification/.
 
+# Link Prediction experiments:
+
+Freebase (FB15k):
+
+    $ ./scripts/fb15k_lp/fb15k_lp.py | parallel -j 8
+
+WordNet (WN18):
+
+    $ ./scripts/wn18_lp/wn18_lp.py | parallel -j 8
+
+Validation and test results will be stored in directories logs/fb15k_lp/ and logs/wn18_lp/.
+
 # Comparing the Optimization Criteria (loss functionals):
 
 Freebase (FB15k):
