@@ -44,7 +44,8 @@ WordNet (WN18):
 
 Validation and test results will be stored in directories logs/fb15k_lp/ and logs/wn18_lp/.
 
-## Comparing the Optimization Criteria (loss functionals):
+## Comparing the Optimization Criteria:
+### (by comparing the behaviour of the loss functional with each of them)
 
 Freebase (FB15k):
 
