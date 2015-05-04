@@ -1,0 +1,7 @@
+<http://dbpedia.org/ontology/album>
+<http://dbpedia.org/ontology/associatedBand>
+<http://dbpedia.org/ontology/associatedMusicalArtist>
+<http://dbpedia.org/ontology/genre>
+<http://dbpedia.org/ontology/musicalArtist>
+<http://dbpedia.org/ontology/musicalBand>
+<http://dbpedia.org/ontology/recordLabel>
